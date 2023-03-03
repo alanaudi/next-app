@@ -3,8 +3,20 @@
 @tailwind utilities;
 
 :root {
+	@apply font-sans;
+
+	// essentials
 	--background-color: #ffffff;
 	--text-color: #000000;
+
+	// layouts
+	--layout-spacing-x: theme('spacing.6');
+	--layout-spacing-y: theme('spacing.8');
+
+	// components
+	--logo-icon-size: theme('spacing.8');
+	--nav-padding: theme('spacing.4');
+	--main-margin-y: theme('spacing.8');
 }
 
 body {
@@ -16,5 +28,7 @@ body {
 }
 
 main {
-	@apply flex-1;
+	@apply flex-1
+		mx-[var(--layout-spacing-x)]
+		my-[var(--layout-spacing-y)];
 }

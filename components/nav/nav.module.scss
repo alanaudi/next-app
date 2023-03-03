@@ -1,0 +1,14 @@
+.nav {
+	@apply flex items-center justify-between
+        px-[var(--layout-spacing-x)]
+        py-[var(--nav-padding)]
+        mt-[calc(var(--layout-spacing-y)-var(--nav-padding))];
+
+	background-color: var(--background-color);
+
+	.logo-icon-link {
+		@apply relative
+			h-[var(--logo-icon-size)]
+			w-[var(--logo-icon-size)];
+	}
+}
