@@ -1,4 +1,3 @@
 .main {
-	background-color: var(--background-color);
-	color: var(--text-color);
+	@apply text-red-600;
 }

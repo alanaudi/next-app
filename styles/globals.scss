@@ -6,3 +6,15 @@
 	--background-color: #ffffff;
 	--text-color: #000000;
 }
+
+body {
+	@apply min-h-screen
+		flex flex-col;
+
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+main {
+	@apply flex-1;
+}
