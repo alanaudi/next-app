@@ -1,0 +1,16 @@
+# nodejs
+node_modules
+next-env.d.ts
+
+# build and cache
+.next/
+
+# env
+.env
+.env.*
+!.env.example
+
+# Ignore files for pnpm, npm and yarn
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
