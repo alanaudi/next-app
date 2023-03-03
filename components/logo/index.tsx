@@ -5,6 +5,9 @@ interface LogoProps {
 	filename?: string
 }
 
-export default function Logo({ className, filename = 'logo.svg' }: LogoProps) {
+export default function Logo({
+	className,
+	filename = 'nextjs-icon.svg',
+}: LogoProps) {
 	return <Image className={className} src={`/${filename}`} alt="logo" fill />
 }
