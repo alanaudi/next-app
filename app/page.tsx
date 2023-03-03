@@ -1,6 +1,6 @@
+import styles from '@/styles/pages/home.module.scss'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
-import styles from './page.module.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
