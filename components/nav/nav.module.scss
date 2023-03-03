@@ -11,4 +11,10 @@
 			h-[var(--logo-icon-size)]
 			w-[var(--logo-icon-size)];
 	}
+
+	& > ul {
+		@apply hidden md:block font-semibold;
+
+		font-size: var(--nav-font-size);
+	}
 }

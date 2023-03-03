@@ -1,5 +1,8 @@
-import { Logo } from '@/components'
+'use client'
+
+import { Logo, MenuButton } from '@/components'
 import Link from 'next/link'
+import { useState } from 'react'
 import styles from './nav.module.scss'
 
 interface NavProps {}
@@ -12,8 +15,13 @@ const navLinks = [
 ]
 
 export default function Nav({}: NavProps) {
+	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+	const logoButtonHandler = () => setIsMenuOpen(!isMenuOpen)
+
 	return (
 		<nav className={styles.nav}>
+			<MenuButton />
+
 			{/* logo */}
 			<Link href="/" className={styles['logo-icon-link']}>
 				<Logo />
@@ -21,7 +29,7 @@ export default function Nav({}: NavProps) {
 
 			<ul>
 				{navLinks.map(({ name, href }) => (
-					<li key={name} className="text-lg font-semibold">
+					<li key={name}>
 						<Link href={href}>Blog</Link>
 					</li>
 				))}
