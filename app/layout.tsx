@@ -13,24 +13,25 @@ interface RootLayoutProps {
 }
 
 // local fonts
-const taipeiSansTCBeta = localFont({
-	src: '../public/fonts/TaipeiSansTCBeta/TaipeiSansTCBeta-Regular.ttf',
-	weight: '400',
-	variable: '--font-taipei-sans-tc-beta',
-	display: 'swap',
-})
-const openHuninn = localFont({
-	src: '../public/fonts/OpenHuninn/OpenHuninn-1.1.ttf',
-	weight: '400',
-	variable: '--font-open-huninn',
-	display: 'swap',
-})
+// NOTE: file size is too large, so I commented them out
+// const taipeiSansTCBeta = localFont({
+// 	src: '../public/fonts/TaipeiSansTCBeta/TaipeiSansTCBeta-Regular.ttf',
+// 	weight: '400',
+// 	variable: '--font-taipei-sans-tc-beta',
+// 	display: 'swap',
+// })
+// const openHuninn = localFont({
+// 	src: '../public/fonts/OpenHuninn/OpenHuninn-1.1.ttf',
+// 	weight: '400',
+// 	variable: '--font-open-huninn',
+// 	display: 'swap',
+// })
 
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html
 			lang="en"
-			className={cx(taipeiSansTCBeta.variable, openHuninn.variable)}
+			// className={cx(taipeiSansTCBeta.variable, openHuninn.variable)}
 		>
 			<body>
 				<Nav />
