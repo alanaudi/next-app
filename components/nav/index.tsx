@@ -10,7 +10,7 @@ interface NavProps {}
 const navLinks = [
 	{
 		name: 'Blog',
-		href: '/blog',
+		href: '/',
 	},
 ]
 
