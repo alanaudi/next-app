@@ -5,6 +5,7 @@ specifiers:
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   autoprefixer: ^10.4.13
+  classix: ^2.1.22
   eslint: 8.35.0
   eslint-config-next: 13.2.3
   next: 13.2.3
@@ -22,6 +23,7 @@ dependencies:
   '@types/node': 18.14.4
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
+  classix: 2.1.22
   eslint: 8.35.0
   eslint-config-next: 13.2.3_ycpbpc6yetojsgtrx3mwntkhsu
   next: 13.2.3_wiv434v7erz4aedd5whhdwmpv4
@@ -578,6 +580,10 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+
+  /classix/2.1.22:
+    resolution: {integrity: sha512-WbpzCCk+lP47qRiNipJboLKLhksP1uhhsLlccbPRBaVhK6AeXAf8qY/UTixEvKhStoMPQlMPNTrk6ywSviFIQA==}
+    dev: false
 
   /client-only/0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
